@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snipkey – Text Expander for Chrome</title>
+<meta name="description" content="Type a short trigger, get your full text. A private, IME-friendly text expander for Chrome. No account, works offline.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f5f6f8; --border: #dfe2e7; --text: #1c1f24; --muted: #5d6470;
+    --accent: #2f5bea; --accent-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17191d; --surface: #22252b; --border: #353a42; --text: #e8eaee; --muted: #a0a7b3; --accent: #6d8dff; --accent-text: #0e1220; }
+  }
+  * { box-sizing: border-box; }
+  a { color: var(--accent); }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 0 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; padding: 20px 0; }
+  header img { width: 36px; height: 36px; }
+  header strong { font-size: 20px; flex: 1; }
+  header a { color: var(--muted); text-decoration: none; font-size: 14px; }
+  .hero { padding: 40px 0 32px; }
+  .hero h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.2; margin: 0 0 16px; }
+  .hero p { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 640px; }
+  .btn { display: inline-block; background: var(--accent); color: var(--accent-text); padding: 12px 20px; border-radius: 8px; font-weight: 600; text-decoration: none; }
+  .note { color: var(--muted); font-size: 14px; margin-left: 12px; }
+  .demo { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 15px; margin: 8px 0 40px; overflow-x: auto; }
+  .demo .k { color: var(--accent); font-weight: 700; }
+  h2 { font-size: 24px; margin: 48px 0 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .card { border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  footer { border-top: 1px solid var(--border); margin-top: 64px; padding-top: 20px; color: var(--muted); font-size: 14px; display: flex; gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--muted); }
+  .ja { margin-top: 64px; padding-top: 8px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <strong>Snipkey</strong>
+    <a href="#ja">日本語</a>
+    <a href="privacy.html">Privacy</a>
+  </header>
+
+  <section class="hero">
+    <h1>Type a short trigger.<br>Get your full text.</h1>
+    <p>Snipkey is a text expander for Chrome. Save the sentences you type every day and insert them anywhere with a few keystrokes. Private by design, and built to work with Japanese, Chinese and Korean input methods.</p>
+    <a class="btn" href="#install">Add to Chrome</a><span class="note">Coming soon to the Chrome Web Store</span>
+  </section>
+
+  <div class="demo"><span class="k">;ty</span> &rarr; Thanks for reaching out! &#9646;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Best regards,</div>
+
+  <h2>Why Snipkey</h2>
+  <div class="grid">
+    <div class="card"><h3>Private by design</h3><p>Snippets are stored only in your browser. No account, no cloud, no tracking. Snipkey never reads or sends what you type.</p></div>
+    <div class="card"><h3>IME-friendly</h3><p>Tested with Japanese, Chinese and Korean input methods, where many text expanders misfire.</p></div>
+    <div class="card"><h3>Instant and undoable</h3><p>Expands as you type. Press Ctrl+Z (&#8984;Z) to get the trigger back.</p></div>
+    <div class="card"><h3>Works where you write</h3><p>Email, chat, support tickets, forms and rich editors, including multi-line snippets and variables like {cursor} and {date}.</p></div>
+  </div>
+
+  <h2 id="install">Plans</h2>
+  <table>
+    <tr><th>Free</th><td>Up to 15 active snippets, every feature above.</td></tr>
+    <tr><th>Pro</th><td>Unlimited snippets, plus backup export and import to move snippets between computers. Payments are processed by our merchant of record, Lemon Squeezy.</td></tr>
+  </table>
+
+  <h2>Support</h2>
+  <p>Questions or problems: <a href="mailto:snipkey@gyomu-ai-sekkei.com">snipkey@gyomu-ai-sekkei.com</a></p>
+
+  <section class="ja" id="ja" lang="ja">
+    <h2>Snipkey（日本語）</h2>
+    <p>Snipkey は、短いキーワードを打つだけで定型文に展開する Chrome 拡張機能です。メール、チャット、問い合わせ対応、フォームなど、あらゆる入力欄で使えます。</p>
+    <div class="grid">
+      <div class="card"><h3>日本語入力（IME）対応</h3><p>変換確定のタイミングを正しく扱うよう設計・テストしています。</p></div>
+      <div class="card"><h3>プライバシー重視</h3><p>定型文はブラウザの中だけに保存。アカウント登録も、入力内容の送信もありません。</p></div>
+      <div class="card"><h3>無料版と Pro</h3><p>無料版は定型文15件まで。Pro は件数無制限と、バックアップの書き出し・読み込みに対応します。</p></div>
+    </div>
+    <p>お問い合わせ：<a href="mailto:snipkey@gyomu-ai-sekkei.com">snipkey@gyomu-ai-sekkei.com</a></p>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Snipkey</span>
+    <a href="privacy.html">Privacy Policy / プライバシーポリシー</a>
+    <a href="mailto:snipkey@gyomu-ai-sekkei.com">Contact</a>
+  </footer>
+</main>
+</body>
+</html>
