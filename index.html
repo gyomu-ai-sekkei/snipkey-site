@@ -15,6 +15,7 @@
     :root { --bg: #17191d; --surface: #22252b; --border: #353a42; --text: #e8eaee; --muted: #a0a7b3; --accent: #6d8dff; --accent-text: #0e1220; }
   }
   * { box-sizing: border-box; }
+  a { color: var(--accent); }
   body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif; }
   main { max-width: 860px; margin: 0 auto; padding: 0 16px 64px; }
   header { display: flex; align-items: center; gap: 12px; padding: 20px 0; }
@@ -29,7 +30,7 @@
   .demo { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 15px; margin: 8px 0 40px; overflow-x: auto; }
   .demo .k { color: var(--accent); font-weight: 700; }
   h2 { font-size: 24px; margin: 48px 0 16px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
   .card { border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
   .card h3 { margin: 0 0 6px; font-size: 17px; }
   .card p { margin: 0; color: var(--muted); font-size: 15px; }
